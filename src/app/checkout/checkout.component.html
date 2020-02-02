@@ -1,0 +1,19 @@
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Total cost<th>
+    </tr>
+  </thead>
+    <tr *ngFor="let product of basket">
+      <td class="pr-2">{{ product.name }}</td>
+      <td>${{ withTax(product.id) }}
+    </tr>
+  <tbody>
+  </tbody>
+</table>
+<hr/>
+<div>
+  <p><span>Total Tax: </span><span>{{ totalTax }}</span></p>
+  <p><span>Total Cost: </span><span>{{ totalCost }}</span></p>
+</div>

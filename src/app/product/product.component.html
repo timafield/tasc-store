@@ -1,0 +1,11 @@
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+  <div class="my-list">
+      <img src="{{ product.image }}" alt="{{ product.name }}" height="300"/>
+      <h3>{{product.name}}</h3>
+      <span>$</span>
+      <span class="pull-right">{{product.listed}}</span>
+      <div class="offer">
+        <a (click)="addToBasket(product)" class="btn btn-info">Add To Cart</a>
+      </div>
+  </div>
+</div>
