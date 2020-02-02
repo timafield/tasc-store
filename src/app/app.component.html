@@ -2,13 +2,16 @@
   <div class="row">
     <div class="col-sm-12">
       <h1 class="text-center">TASC Store</h1>
-      <h6 class="text-right"><a [routerLink]="['/basket']">Basket: {{(basket).length}}</a></h6>
+      <h6 class="text-right"><a
+        [routerLink]="['/basket']"
+        class="badge badge-info">Basket: {{(basket).length}}</a>
+      </h6>
       <h6 class="text-right">Total Tax: {{ totalTax }}</h6>
       <h6 class="text-right">Total Cost: {{ totalCost }}</h6>
       <a [routerLink]="['/checkout']"
           routerLinkActive="active"
           [state]="{ basket: basket }"
-          class="btn btn-primary float-right"> Checkout</a>
+          class="btn btn-info float-right"> Checkout</a>
       <hr/>
     </div>
   </div>
