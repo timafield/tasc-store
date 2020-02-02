@@ -21,10 +21,10 @@ export class ProductComponent implements OnInit {
               private productService: ProductService) { }
 
   ngOnInit() {
-    this.route.params.subscribe(p => {
-      let id = p['id'];
-      this.productService.getProducts().subscribe((x) => {
-        let result = x.filter(y => y.id == id);
+    this.route.params.subscribe(params => {
+      let id = params['id'];
+      this.productService.getProducts().subscribe((product) => {
+        let result = product.filter(x => x.id == id);
         if (result.length > 0) {
           this.product = result[0];
         }
