@@ -1,0 +1,10 @@
+{
+  "lambda": {
+    "role": "tasc-store-executor",
+    "name": "tasc-store",
+    "region": "us-east-2"
+  },
+  "api": {
+    "id": "gm9ekge8le"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "serverless": {
+    "project": "tasc-store",
+    "provider": "aws",
+    "skipInstall": false,
+    "directory": ".",
+    "clientProject": "tasc-store",
+    "serverless": {
+      "aws": {},
+      "gcloud": {}
+    }
+  }
+}

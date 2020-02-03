@@ -14,7 +14,9 @@ export class ProductService {
   products: Product[];
 
   getProducts(): Observable<Product[]> {
-    return this.http.get<Product[]>('http://localhost:4000/products');
+    //const url = 'http://localhost:4000/products'
+    const url = 'https://gm9ekge8le.execute-api.us-east-2.amazonaws.com/latest/products'
+    return this.http.get<Product[]>(url);
     //return PRODUCTS;
   }
 }
